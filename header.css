@@ -1,0 +1,97 @@
+/* ==============================
+    Header
+    ============================== */
+header {
+    background-color: #004d40; /* 颜色已替换: #002b5b -> #004d40 */
+    color: white;
+    padding: 25px 0;
+    margin-bottom: 10px;
+}
+
+header .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 整体居中 */
+}
+
+.header-title-row {
+    display: flex;
+    align-items: center; /* logo 与标题垂直居中 */
+    justify-content: center; /* 标题居中 */
+}
+
+.header-title-row .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffffcc;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    background-color: #fff;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* ==============================
+    VAMOS
+    ============================== */
+/* ====== VAMOS 标题统一样式 ====== */
+header .vamos-line,
+.vamos-line {
+    font-size: 2rem; 
+    font-weight: 800; 
+    color: #ffffff !important; 
+    text-align: center; 
+    line-height: 1; 
+    letter-spacing: -0.05em; 
+    margin: 5px 0; 
+    font-family: 'Poppins', sans-serif;
+    position: relative; 
+    z-index: 10;
+}
+
+
+/* ==============================
+    Navigation
+    ============================== */
+header nav {
+    margin-top: 5px;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: 500;
+    color: white; /* 保持导航链接为白色 */
+    transition: opacity 0.3s ease;
+}
+
+header nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    /* 注意：导航栏的激活链接颜色由 style.css 或内部样式控制。
+       这里保持为白色，通过下划线区分，如果需要改为青色，
+       应在 style.css 或 html 文件的内部样式中定义 .active 的颜色。
+       为避免再次出现颜色覆盖问题，我将假设您已在 style.css 或 index.html 中处理了 .active 的颜色。
+    */
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+/* ==============================
+    Responsive adjustments
+    ============================== */
+@media (max-width: 900px) {
+    .header-title-row {
+        flex-direction: column;
+    }
+    .header-title-row .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
