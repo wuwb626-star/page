@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jing Liu | Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../header.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* === INTERNAL STYLE FIX: Ensures VAMOS is white, overriding any default H1 style === */
+    header .vamos-line,
+    header .vamos-line strong {
+      color: white;
+    }
+    /* ================================================================================= */
+
+    /* === Internal Styles for Profile Body Content === */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    
+    /* FIX: Override style.css 'section' margins/padding for a tighter layout */
+    section {
+      padding: 10px 0;
+      margin-bottom: 0px;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+
+    /* Profile Image */
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #004d40; /* 颜色已替换 */
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    /* Section Headers */
+    h2.section-title {
+      color: #004d40; /* 颜色已替换 */
+      font-size: 1.5rem;
+      margin-top: 10px; 
+      margin-bottom: 8px; 
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    strong { color: #004d40; } /* 颜色已替换 */
+    
+    /* Links within the main body */
+    main a { color: #004d40; text-decoration: underline; } /* 颜色已替换 */
+    main a:hover { color: #00796b; } /* 颜色已替换 */
+
+    /* List styling for education/patents */
+    .info-list {
+      list-style: none;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+
+
+    /* Publication Tab Styles */
+    #pub-tabs { margin-bottom: 10px; }
+    .pub-tab-btn { padding: 8px 18px; margin-right: 10px; border: none; background-color: #e6e6e6; cursor: pointer; border-radius: 4px; font-size: 15px; font-family: inherit; }
+    .pub-tab-btn.active { background-color: #004d40; color: white; font-weight: bold; } /* 颜色已替换 */
+    
+    /* Publication Item Styles */
+    .pub-item { border-left: 3px solid #004d40; padding-left: 12px; margin-bottom: 10px; line-height: 1.6; font-size: 15px; } /* 颜色已替换 */
+    .pub-year { font-weight: bold; }
+    .pub-journal { font-style: italic; }
+
+
+.pub-list {
+  margin: 0;
+  padding-left: 0 !important;   /* ← 去掉所有缩进 */
+}
+
+.pub-item {
+  border-left: none !important;
+  padding-left: 0 !important;   /* ← 项目本身不缩进 */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.pub-list li {
+  list-style-position: inside;  /* ← 数字在内容内部，完全左对齐 */
+}
+/* 序号加粗 + 改颜色 */
+.pub-list li::marker {
+  font-weight: bold;
+  color: #004d40;  /* ← 你可以换成任意颜色 */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-title-row">
+        <img src="../images/logo_up.png" alt="Group Logo" class="logo">
+        <h1>Vegetation And environMent remOte Sensing</h1>
+      </div>
+      
+      <h1 class="vamos-line"><strong>VAMOS</strong></h1>
+      
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../students.html">Students</a>
+        <a href="../publications_v2.html">Publications</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <div style="text-align:center;">
+      <img src="../images/team/liu_jing.png" alt="Jing Liu" class="profile">
+    </div>
+  
+    <section>
+      <h2 class="section-title">Jing Liu, Assoc. Prof</h2>
+
+<div style="font-weight:700;">
+  <a href="mailto:jingliugeo@njnu.edu.cn" style="color:#004d40; text-decoration:none;">jingliugeo@njnu.edu.cn</a>
+</div>
+
+      
+      <p>Jing Liu’s research centers on quantitative remote sensing, with a focus on radiative transfer modeling and the remote sensing of photosynthesis using solar-induced chlorophyll fluorescence (SIF) and the photochemical reflectance index (PRI). His work spans canopy radiation physics, vegetation structure–function relationships, and soil–vegetation–atmosphere energy–carbon coupling. He is a recipient of the National High-level Young Talent Program, Jiangsu Distinguished Professor, and NNU Outstanding Young Scholar. Yang has developed several influential modeling frameworks, including unified canopy radiative transfer theory and the SPART, mSCOPE, and SCOPE2.0 models. He has also advanced physically based methods for interpreting SIF and PRI to better quantify plant physiological status and ecosystem photosynthetic function. His research contributes to improving the physical foundations and retrieval capability of next-generation vegetation remote sensing.</p>
+    </section>   
+
+
+
+  <!-- ===== Publications Tabs ===== -->
+<section id="publications">
+  <style>
+    /* Year grouping styles for ALL tab */
+    #pub-all .year-block {
+      margin: 8px 0 10px 0;
+    }
+    #pub-all .year-header {
+      font-weight: bold;
+      color: #004d40;
+      font-size: 1.05rem;
+      margin: 4px 0;
+    }
+    #pub-all .year-content {
+      margin-left: 10px;
+    }
+  </style>
+
+  <h2 class="section-title">Publications</h2>
+
+  <div id="pub-tabs">
+    <button class="pub-tab-btn active" onclick="showSelected()">Selected</button>
+    <button class="pub-tab-btn" onclick="showLeading()">Leading Authors</button>
+    <button class="pub-tab-btn" onclick="showAll()">All</button>
+  </div>
+
+  <!-- ================= SELECTED (5 PAPERS) ================= -->
+  <div id="pub-selected">
+
+    <div class="pub-item">
+      <strong>1.</strong>
+      <strong>Yang, P.*</strong>, Verhoef, W., van der Tol, C. (2017).
+      The mSCOPE model: A simple adaptation to the SCOPE model to describe reflectance, fluorescence and photosynthesis of vertically heterogeneous canopies.
+      <em>Remote Sensing of Environment</em>, 201. 
+    <a href="https://doi.org/10.1016/j.rse.2017.08.029" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>2.</strong>
+      <strong>Yang, P.*</strong>, Campbell, P. K. E., Middleton, E. M., van der Tol, C. (2020).
+      Fluorescence Correction Vegetation Index (FCVI): A physically based reflectance index to separate physiological and non-physiological information in far-red sun-induced chlorophyll fluorescence.
+      <em>Remote Sensing of Environment</em>, 240, 111676.
+     <a href="https://doi.org/10.1016/j.rse.2020.111676" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>3.</strong>
+      <strong>Yang, P.*</strong>, Prikaziuk, E., Verhoef, W., van der Tol, C. (2021).
+      SCOPE 2.0: A model to simulate vegetated land surface fluxes and satellite signals.
+      <em>Geoscientific Model Development</em>, 14(7), 4697–4712.
+    <a href="https://doi.org/10.5194/gmd-14-4697-2021" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>4.</strong>
+      <strong>Yang, P.*</strong> (2024).
+      Downscaling canopy photochemical reflectance index to leaf level by correcting for the soil effects.
+      <em>Remote Sensing of Environment</em>, 311, 114250.
+    <a href="https://doi.org/10.1016/j.rse.2024.114250" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>5.</strong>
+      <strong>Yang, P.*</strong>, Liu, Z., Han, D., Zhang, R., Siegmann, B., Liu, J., Zhao, H., Rascher, U., Chen, J., van der Tol, C. (2025).
+      Mitigating the black-soil problem in the reflectance-to-fluorescence (R2F) relationship: A soil-adjusted reflectance-based approach for downscaling SIF.
+      <em>Remote Sensing of Environment</em>, 330, 114998.
+   <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+  </div>
+
+
+<!-- ================= LEADING AUTHORS ================= -->
+<div id="pub-leading" style="display:none;">
+    <ol class="pub-list">
+
+        <li class="pub-item">Han, D., <strong>Liu, J.*</strong>, Xu, S., Yin, T., Liu, S., Zhang, R., & Yang, P. (2026). Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <em>Remote Sensing of Environment</em>, 332, 115065.
+            <a href="https://doi.org/10.1016/j.rse.2025.115065" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">Murithi, C.M., Pisek, J., Schraik, D., Bailey, B.N., <strong>Liu, J.</strong>, Stovall, A.E.L., Vicari, M.B., Zheng, G. and Skidmore, A. (2025), Intercomparison of methods for estimating leaf inclination angle distribution with terrestrial lidar for broadleaf tree species. <em>New Phytol.</em>
+            <a href="https://doi.org/10.1111/nph.70379" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.</strong>, Wang, J. & Li, L.* (2024). Vectorized solar photovoltaic installation dataset across China in 2015 and 2020. <em>Scientific Data</em> 11, 1446.
+            <a href="https://doi.org/10.1038/s41597-024-04356-z" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">Wang, Z., <strong>Liu, J.*</strong>, Sheng, Y. & Yang, X. (2024). Intercomparison of the DART model and GEDI simulator for simulating GEDI waveforms in forests. <em>International Journal of Applied Earth Observation and Geoinformation</em> 134, 104148.
+            <a href="https://doi.org/10.1016/j.jag.2024.104148" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">He, Z., <strong>Liu, J.*</strong>, Yang, S. (2024). DE-Net: A Dual-Encoder Network for Local and Long-Distance Context Information Extraction in Semantic Segmentation of Large-Scale Scene Point Clouds. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing.</em>
+            <a href="https://ieeexplore.ieee.org/document/10652235" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">Wang Z., Chen H.*, <strong>Liu J.*</strong>, et al. (2024). Multilevel intuitive attention neural network for airborne LiDAR point cloud semantic segmentation. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 132:104020.
+            <a href="https://doi.org/10.1016/j.jag.2024.104020" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">Han D., <strong>Liu J.*</strong>, Zhang R., et al. (2023). Evaluation of the SAIL Radiative Transfer Model for Simulating Canopy Reflectance of Row Crop Canopies. <em>Remote Sensing</em>. 15(23):5433.
+            <a href="https://doi.org/10.3390/rs15235433" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">Wang J., <strong>Liu J.*</strong>, Li L. (2022). Detecting Photovoltaic Installations in Diverse Landscapes Using Open Multi-Source Remote Sensing Data. <em>Remote Sensing</em>. 14(24):6296.
+            <a href="https://doi.org/10.3390/rs14246296" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item">雷秋佳，<strong>刘婧*</strong>，曹新运．(2022). 利用机载LiDAR数据的开放DEM产品精度评估. <em>武汉大学学报(信息科学版)</em>.
+            <a href="https://doi.org/10.13203/j.whugis20220421" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.*</strong>, Li, L., Akerblom, M., Wang, T., Skidmore, A., Zhu, X., & Heurich, M. (2021). Comparative Evaluation of Algorithms for Leaf Area Index Estimation from Digital Hemispherical Photography through Virtual Forests. <em>Remote Sensing</em>, 13(16), 3325.
+            <a href="https://doi.org/10.3390/rs13163325" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.*</strong>, Wang, T., Skidmore, A.K., Jones, S., Heurich, M., Beudert, B., Premier, J. (2019). Comparison of terrestrial LiDAR and digital hemispherical photography for estimating leaf angle distribution in European broadleaf beech forests. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 158: 76-89.
+            <a href="https://doi.org/10.1016/j.isprsjprs.2019.09.015" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.*</strong>, Skidmore, A.K., Wang, T., Zhu, X., Premier, J., Heurich, M., Beudert, B., Jones, S. (2019). Variation of leaf angle distribution quantified by terrestrial LiDAR in natural European beech forest. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 148, 208-220.
+            <a href="https://doi.org/10.1016/j.isprsjprs.2019.01.005" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.*</strong>, Skidmore, A.K., Jones, S., Wang, T., Heurich, M., Zhu, X., Shi, Y. (2018). Large off-nadir scan angle of airborne LiDAR can severely affect the estimates of forest structure metrics. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 136, 13-25.
+            <a href="https://doi.org/10.1016/j.isprsjprs.2017.12.004" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.*</strong>, Skidmore, A.K., Heurich, M., Wang, T.* (2017). Significant effect of topographic normalization of airborne LiDAR data on the retrieval of plant area index profile in mountainous forests. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 132, 77-87.
+            <a href="https://doi.org/10.1016/j.isprsjprs.2017.08.005" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Liu, J.</strong>, Li, P.*, Wang, X. (2015). A new segmentation method for very high resolution imagery using spectral and morphological information. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 101, 145-162.
+            <a href="https://doi.org/10.1016/j.isprsjprs.2014.11.009" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+    </ol>
+</div>
+
+
+
+ <!-- ================= ALL PUBLICATIONS (按年份分块) ================= -->
+  <div id="pub-all" style="display:none;">
+
+    <div class="year-block">
+        <div class="year-header">2026</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text">Han, D., <strong>Liu, J.</strong>, Xu, S., Yin, T., Liu, S., Zhang, R., & Yang, P. (2026). Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <em>Remote Sensing of Environment</em>, 332, 115065.</span>
+                <a href="https://doi.org/10.1016/j.rse.2025.115065" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2025</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text">Yang, P., Liu, Z., Han, D., Zhang, R., Siegmann, B., <strong>Liu, J.</strong>, Zhao, H., Rascher, U., Chen, J.M. and van der Tol, C. (2025). Mitigating the black-soil problem in the reflectance-to-fluorescence (R2F) relationship: A soil-adjusted reflectance-based approach for downscaling SIF. <em>Remote Sensing of Environment</em>, 330, p.114998.</span>
+                <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Zhang, R., Yang, P.*, Xu, S., Li, L., Guo, T., Han, D. and <strong>Liu, J.</strong> (2025). The relationship between the ratio of far-red to red leaf SIF and leaf chlorophyll content: theoretical derivation and experimental validation. <em>Remote Sensing of Environment</em>, 324, p.114762.</span>
+                <a href="https://doi.org/10.1016/j.rse.2025.114762" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Murithi, C.M., Pisek, J., Schraik, D., Bailey, B.N., <strong>Liu, J.</strong>, Stovall, A.E.L., Vicari, M.B., Zheng, G. and Skidmore, A. (2025), Intercomparison of methods for estimating leaf inclination angle distribution with terrestrial lidar for broadleaf tree species. <em>New Phytol</em>.</span>
+                <a href="https://doi.org/10.1111/nph.70379" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Yang, P.*, van der Tol, C., <strong>Liu, J.</strong>, & Liu, Z. (2025). Separation of the direct reflection of soil from canopy spectral reflectance. <em>Remote Sensing of Environment</em>, 316, 114500.</span>
+                <a href="https://doi.org/10.1016/j.rse.2024.114500" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2024</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.</strong>, Wang, J. & Li, L.* (2024). Vectorized solar photovoltaic installation dataset across China in 2015 and 2020. <em>Scientific Data</em> 11, 1446.</span>
+                <a href="https://doi.org/10.1038/s41597-024-04356-z" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Wang, Z., <strong>Liu, J.*</strong>, Sheng, Y. & Yang, X. (2024). Intercomparison of the DART model and GEDI simulator for simulating GEDI waveforms in forests. <em>International Journal of Applied Earth Observation and Geoinformation</em> 134, 104148.</span>
+                <a href="https://doi.org/10.1016/j.jag.2024.104148" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">He, Z., <strong>Liu, J.*</strong>, Yang, S. (2024). DE-Net: A Dual-Encoder Network for Local and Long-Distance Context Information Extraction in Semantic Segmentation of Large-Scale Scene Point Clouds. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>.</span>
+                <a href="https://ieeexplore.ieee.org/document/10652235" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Wang Z., Chen H.*, <strong>Liu J.*</strong>, et al. (2024). Multilevel intuitive attention neural network for airborne LiDAR point cloud semantic segmentation. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 132:104020.</span>
+                <a href="https://doi.org/10.1016/j.jag.2024.104020" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2023</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text">Han D., <strong>Liu J.*</strong>, Zhang R., et al. (2023). Evaluation of the SAIL Radiative Transfer Model for Simulating Canopy Reflectance of Row Crop Canopies. <em>Remote Sensing</em>. 15(23):5433.</span>
+                <a href="https://doi.org/10.3390/rs15235433" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2022</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text">Wang J., <strong>Liu J.*</strong>, Li L. (2022). Detecting Photovoltaic Installations in Diverse Landscapes Using Open Multi-Source Remote Sensing Data. <em>Remote Sensing</em>. 14(24):6296.</span>
+                <a href="https://doi.org/10.3390/rs14246296" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">雷秋佳，<strong>刘婧*</strong>，曹新运．(2022). 利用机载LiDAR数据的开放DEM产品精度评估. <em>武汉大学学报(信息科学版)</em>.</span>
+                <a href="https://doi.org/10.13203/j.whugis20220421" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2021</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.*</strong>, Li, L., Akerblom, M., Wang, T., Skidmore, A., Zhu, X., & Heurich, M. (2021). Comparative Evaluation of Algorithms for Leaf Area Index Estimation from Digital Hemispherical Photography through Virtual Forests. <em>Remote Sensing</em>, 13(16), 3325.</span>
+                <a href="https://doi.org/10.3390/rs13163325" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Zhu, X.*, <strong>Liu, J.</strong>, Skidmore, A.K., Premier, J., Heurich, M. (2020). A voxel matching method for effective leaf area index estimation in temperate deciduous forests from leaf-on and leaf-off airborne LiDAR data. <em>Remote Sensing of Environment</em>, 240, 111696.</span>
+                <a href="https://doi.org/10.1016/j.rse.2020.111696" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2020</div>
+        <div class="year-content">
+             <div class="pub-item">
+                <span class="pub-text">Wang, D., Wan, B.*, <strong>Liu, J.</strong>, Su, Y., Guo, Q., Qiu, P., Wu, X. (2020). Estimating aboveground biomass of the mangrove forests on northeast Hainan Island in China using an upscaling method from field plots, UAV-LiDAR data and Sentinel-2 imagery. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 85, 101986.</span>
+                <a href="https://doi.org/10.1016/j.jag.2019.101986" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2019</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.*</strong>, Wang, T., Skidmore, A.K., Jones, S., Heurich, M., Beudert, B., Premier, J. (2019). Comparison of terrestrial LiDAR and digital hemispherical photography for estimating leaf angle distribution in European broadleaf beech forests. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 158: 76-89.</span>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2019.09.015" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.*</strong>, Skidmore, A.K., Wang, T., Zhu, X., Premier, J., Heurich, M., Beudert, B., Jones, S. (2019). Variation of leaf angle distribution quantified by terrestrial LiDAR in natural European beech forest. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 148, 208-220.</span>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2019.01.005" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2018</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.*</strong>, Skidmore, A.K., Jones, S., Wang, T., Heurich, M., Zhu, X., Shi, Y. (2018). Large off-nadir scan angle of airborne LiDAR can severely affect the estimates of forest structure metrics. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 136, 13-25.</span>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2017.12.004" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Zhu, X., Skidmore, A.K., Wang, T., <strong>Liu, J.</strong>, Darvishzadeh, R., Shi, Y., Premier, J., Heurich, M. (2018). Improving leaf area index (LAI) estimation by correcting for clumping and woody effects using terrestrial laser scanning. <em>Agricultural and Forest Meteorology</em>, 263, 276-286.</span>
+                <a href="https://doi.org/10.1016/j.agrformet.2018.08.026" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Zhu, X., Skidmore, A.K., Darvishzadeh., R., Niemann, K., <strong>Liu, J.</strong>, Shi, Y., Wang, T. (2018). Foliar and woody materials discriminated using terrestrial LiDAR in a mixed natural forest. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 64, 43-50.</span>
+                <a href="https://doi.org/10.1016/j.jag.2017.09.004" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2017</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.*</strong>, Skidmore, A.K., Heurich, M., Wang, T.* (2017). Significant effect of topographic normalization of airborne LiDAR data on the retrieval of plant area index profile in mountainous forests. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 132, 77-87.</span>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2017.08.005" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Zhu, X., Wang, T., Skidmore, A.K., Darvishzadeh., R., Niemann, K., <strong>Liu, J.</strong> (2017). Canopy leaf water content estimated using terrestrial LiDAR. <em>Agricultural and Forest Meteorology</em>, 232, 152-162.</span>
+                <a href="https://doi.org/10.1016/j.agrformet.2016.08.016" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2015</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Liu, J.</strong>, Li, P.*, Wang, X. (2015). A new segmentation method for very high resolution imagery using spectral and morphological information. <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, 101, 145-162.</span>
+                <a href="https://doi.org/10.1016/j.isprsjprs.2014.11.009" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+  <script>
+    /* ====== Tab switching ====== */
+    function clearTabs() {
+      document.getElementById("pub-selected").style.display = "none";
+      document.getElementById("pub-leading").style.display = "none";
+      document.getElementById("pub-all").style.display = "none";
+      document.querySelectorAll(".pub-tab-btn").forEach(btn => btn.classList.remove("active"));
+    }
+
+    function showSelected() {
+      clearTabs();
+      document.getElementById("pub-selected").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
+    }
+
+    function showLeading() {
+      clearTabs();
+      document.getElementById("pub-leading").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
+    }
+
+    function showAll() {
+      clearTabs();
+      document.getElementById("pub-all").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[2].classList.add("active");
+    }
+  </script>
+</section>
+
+
+<section>
+  <h2 class="section-title">Work and Education Experience</h2>
+<ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+   <li><strong>2015.09 – 2019.05:</strong> Ph.D. in Geospatial Science, School of Science, RMIT University, Australia</li>
+   <li><strong>2014.09 – 2019.05:</strong> Ph.D. in Natural Resources, ITC, University of Twente, Netherlands</li>
+   <li><strong>2011.09 – 2014.06:</strong> M.Eng. in Photogrammetry and Remote Sensing, School of Earth and Space Sciences, Peking University</li>
+   <li><strong>2007.09 – 2011.06:</strong> B.Sc. in Geographic Information Systems, School of Geography and Ocean Science, Nanjing University</li>
+  </ul>
+</section>
+
+<section>
+    <h2 class="section-title">Others (Patents & Honors & Projects)</h2>
+
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Patents & Software
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>System for long-term passive-active chlorophyll fluorescence collaborative observation, CN201410220579.2 (Authorized)</li>
+        <li>Remote sensing extraction method for plantation forest based on spaceborne LiDAR waveform vertical complexity, CN119649227A (Pending)</li>
+        <li>Ground-based LiDAR point cloud data inversion method for mountain forest Leaf Area Index, CN119741597A (Pending)</li>
+    </ul>
+
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Selected Honors and Awards
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>China LiDAR Young Scientist Award, 2025</li>
+        <li>Jiangsu Youth Remote Sensing and Geographic Information Technology Award, 2024</li>
+        <li>National Higher Education Surveying and Mapping Teaching Competition, Youth Teacher Lecturing (Grand Prize), 2023</li>
+        <li>Outstanding Graduate of Nanjing University, 2011</li>
+        <li>Excellent Debater, 7th China Youth Remote Sensing Debate Competition, 2012</li>
+        <li>Remote Sensing Travel Award, 2018</li>
+        <li>Excellent Supervisor, NNU Graduate Scientific and Cultural Activities, 2023</li>
+    </ul>
+    
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Honors for Students Supervised
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>9th National LiDAR Conference Data Processing Competition (First Prize), 2025</li>
+        <li>7th National LiDAR Conference Data Processing Competition (Grand Prize), 2023</li>
+        <li>9th National College GIS Application Skills Competition (Grand Prize), 2020</li>
+        <li>National College Surveying & Mapping Innovation and Entrepreneurship Competition — Innovation Development (Second Prize), 2024</li>
+        <li>National College Surveying & Mapping Innovation and Entrepreneurship Competition — Airborne LiDAR Simulation (Second Prize), 2025</li>
+    </ul>
+
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Funded Research Projects
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>General Program, National Natural Science Foundation of China (NSFC), *Vertical Distribution Inversion of Forest Leaf Area using Spaceborne Full-waveform and Photon-counting LiDAR* (No. 42471418), 2025.01–2028.12 (Ongoing)</li>
+        <li>General Program, Jiangsu Basic Research Plan, *Remote Sensing Monitoring of Terrestrial Ecosystem GPP by Integrating LiDAR and Hyperspectral Data* (No. BK20241884), 2024.09–2027.08 (Ongoing)</li>
+        <li>Open Fund, State Key Laboratory of Remote Sensing Science, *Spaceborne LiDAR Inversion of Forest LAI Vertical Distribution Considering Vegetation Clumping* (No. OFSLRSS202431), 2025.01–2026.12 (Ongoing)</li>
+        <li>Youth Program, NSFC, *Vertical Profile Detection of Leaf Area Index Accounting for Heterogeneity of Forest Canopy Structure and Outline* (No. 42001284), 2021.01–2023.12 (Completed)</li>
+        <li>Youth Program, Jiangsu Basic Research Plan, *3D Vegetation Distribution Detection in the Yangtze River Delta Based on Multi-source Remote Sensing Data*, 2020.07–2023.06 (Completed)</li>
+        <li>Start-up Project, Nanjing Normal University, *Ground Measurement Method of Forest Leaf Area Index Based on Terrestrial LiDAR*, 2019.10–2022.10 (Completed)</li>
+        <li>Jiangsu Shuangchuang (Innovation and Entrepreneurship) Postdoctoral Program (Completed)</li>
+        <li>NSFC-Xinjiang Joint Fund Key Program, *Collaborative and Optimization Study of Ecosystem Water Consumption, Socio-economic Water Use, and Water Resources in the Tarim River Basin*, 2021.01–2024.12 (Ongoing)</li>
+        <li>Outstanding Science and Technology Innovation Team, Jiangsu University, *Coupling Modeling and Sustainability Assessment of Human-Earth Systems*, 2021.09–2024.12 (Ongoing)</li>
+        <li>General Program, NSFC, *Change Detection Based on Category Multipoint Spatiotemporal Transformation Probability and Decision Fusion* (No. 41371329), 2014.01–2017.12 (Completed)</li>
+    </ul>
+
+</section>
+
+  </main>
+
+  <footer>
+    <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo">
+    <br>
+    © 2025 VAMOS Group | Nanjing Normal University
+  </footer>
+  </body>
+</html>

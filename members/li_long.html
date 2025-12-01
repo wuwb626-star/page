@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Long Li | Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../header.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* === INTERNAL STYLE FIX: Ensures VAMOS is white, overriding any default H1 style === */
+    header .vamos-line,
+    header .vamos-line strong {
+      color: white;
+    }
+    /* ================================================================================= */
+
+    /* === Internal Styles for Profile Body Content === */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    
+    /* FIX: Override style.css 'section' margins/padding for a tighter layout */
+    section {
+      padding: 10px 0;
+      margin-bottom: 0px;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin: 5px 0;
+    }
+
+    /* Profile Image */
+    img.profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #004d40; /* 颜色已替换 */
+      display: block;
+      margin: 0 auto 15px auto;
+    }
+
+    /* Section Headers */
+    h2.section-title {
+      color: #004d40; /* 颜色已替换 */
+      font-size: 1.5rem;
+      margin-top: 10px; 
+      margin-bottom: 8px; 
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 4px;
+    }
+
+    strong { color: #004d40; } /* 颜色已替换 */
+    
+    /* Links within the main body */
+    main a { color: #004d40; text-decoration: underline; } /* 颜色已替换 */
+    main a:hover { color: #00796b; } /* 颜色已替换 */
+
+    /* List styling for education/patents */
+    .info-list {
+      list-style: none;
+      padding-left: 12px;
+      margin-bottom: 15px;
+    }
+
+
+
+    /* Publication Tab Styles */
+    #pub-tabs { margin-bottom: 10px; }
+    .pub-tab-btn { padding: 8px 18px; margin-right: 10px; border: none; background-color: #e6e6e6; cursor: pointer; border-radius: 4px; font-size: 15px; font-family: inherit; }
+    .pub-tab-btn.active { background-color: #004d40; color: white; font-weight: bold; } /* 颜色已替换 */
+    
+    /* Publication Item Styles */
+    .pub-item { border-left: 3px solid #004d40; padding-left: 12px; margin-bottom: 10px; line-height: 1.6; font-size: 15px; } /* 颜色已替换 */
+    .pub-year { font-weight: bold; }
+    .pub-journal { font-style: italic; }
+
+
+.pub-list {
+  margin: 0;
+  padding-left: 0 !important;   /* ← 去掉所有缩进 */
+}
+
+.pub-item {
+  border-left: none !important;
+  padding-left: 0 !important;   /* ← 项目本身不缩进 */
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.pub-list li {
+  list-style-position: inside;  /* ← 数字在内容内部，完全左对齐 */
+}
+/* 序号加粗 + 改颜色 */
+.pub-list li::marker {
+  font-weight: bold;
+  color: #004d40;  /* ← 你可以换成任意颜色 */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="header-title-row">
+        <img src="../images/logo_up.png" alt="Group Logo" class="logo">
+        <h1>Vegetation And environMent remOte Sensing</h1>
+      </div>
+      
+      <h1 class="vamos-line"><strong>VAMOS</strong></h1>
+      
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../research.html">Research</a>
+        <a href="../students.html">Students</a>
+        <a href="../publications_v2.html">Publications</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <div style="text-align:center;">
+      <img src="../images/team/li_long.jpg" alt="Long Li" class="profile">
+    </div>
+  
+    <section>
+      <h2 class="section-title">Long Li, Assoc. Prof</h2>
+
+<div style="font-weight:700;">
+  <a href="mailto:p.yang@njnu.edu.cn" style="color:#004d40; text-decoration:none;">p.yang@njnu.edu.cn</a>
+  &nbsp;|&nbsp;
+  <a href="mailto:peiqiyangweb@gmail.com" style="color:#004d40; text-decoration:none;">peiqiyangweb@gmail.com</a>
+</div>
+
+      
+      <p>Li Long, an instructor and specially appointed associate researcher, centers his research on thermal environment remote sensing, vegetation remote sensing, and global change. His focus includes investigating the influence of urban 3D structure and climate change on urban heat patterns, exploring thermal effects from forest disturbances, and analyzing vegetation change dynamics under land use management. He develops high spatiotemporal resolution data products for temperature and air temperature and studies post-wildfire vegetation recovery. He has demonstrated strong scholarly output, publishing 17 papers as first or corresponding author in prestigious journals such as Remote Sensing of Environment (RSE), Geophysical Research Letters (GRL), and Journal of Geophysical Research: Atmospheres (JGR-A), and actively serves as a reviewer for over 20 SCI journals.</p>
+    </section>   
+
+
+
+  <!-- ===== Publications Tabs ===== -->
+<section id="publications">
+  <style>
+    /* Year grouping styles for ALL tab */
+    #pub-all .year-block {
+      margin: 8px 0 10px 0;
+    }
+    #pub-all .year-header {
+      font-weight: bold;
+      color: #004d40;
+      font-size: 1.05rem;
+      margin: 4px 0;
+    }
+    #pub-all .year-content {
+      margin-left: 10px;
+    }
+  </style>
+
+  <h2 class="section-title">Publications</h2>
+
+  <div id="pub-tabs">
+    <button class="pub-tab-btn active" onclick="showSelected()">Selected</button>
+    <button class="pub-tab-btn" onclick="showLeading()">Leading Authors</button>
+    <button class="pub-tab-btn" onclick="showAll()">All</button>
+  </div>
+
+  <!-- ================= SELECTED (5 PAPERS) ================= -->
+  <div id="pub-selected">
+
+    <div class="pub-item">
+      <strong>1.</strong>
+      <strong>Yang, P.*</strong>, Verhoef, W., van der Tol, C. (2017).
+      The mSCOPE model: A simple adaptation to the SCOPE model to describe reflectance, fluorescence and photosynthesis of vertically heterogeneous canopies.
+      <em>Remote Sensing of Environment</em>, 201. 
+    <a href="https://doi.org/10.1016/j.rse.2017.08.029" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>2.</strong>
+      <strong>Yang, P.*</strong>, Campbell, P. K. E., Middleton, E. M., van der Tol, C. (2020).
+      Fluorescence Correction Vegetation Index (FCVI): A physically based reflectance index to separate physiological and non-physiological information in far-red sun-induced chlorophyll fluorescence.
+      <em>Remote Sensing of Environment</em>, 240, 111676.
+     <a href="https://doi.org/10.1016/j.rse.2020.111676" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>3.</strong>
+      <strong>Yang, P.*</strong>, Prikaziuk, E., Verhoef, W., van der Tol, C. (2021).
+      SCOPE 2.0: A model to simulate vegetated land surface fluxes and satellite signals.
+      <em>Geoscientific Model Development</em>, 14(7), 4697–4712.
+    <a href="https://doi.org/10.5194/gmd-14-4697-2021" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>4.</strong>
+      <strong>Yang, P.*</strong> (2024).
+      Downscaling canopy photochemical reflectance index to leaf level by correcting for the soil effects.
+      <em>Remote Sensing of Environment</em>, 311, 114250.
+    <a href="https://doi.org/10.1016/j.rse.2024.114250" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+
+    <div class="pub-item">
+      <strong>5.</strong>
+      <strong>Yang, P.*</strong>, Liu, Z., Han, D., Zhang, R., Siegmann, B., Liu, J., Zhao, H., Rascher, U., Chen, J., van der Tol, C. (2025).
+      Mitigating the black-soil problem in the reflectance-to-fluorescence (R2F) relationship: A soil-adjusted reflectance-based approach for downscaling SIF.
+      <em>Remote Sensing of Environment</em>, 330, 114998.
+   <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank" style="text-decoration: none;">[DOI]</a>
+</div>
+  </div>
+
+
+<!-- ================= LEADING AUTHORS ================= -->
+<div id="pub-leading" style="display:none;">
+    <ol class="pub-list">
+
+        <li class="pub-item">Zhan, W., <strong>Li, L.*</strong>, et al. (2025). Recent widespread deceleration of global surface urban heat islands unveiled by satellites. <em>Geophysical Research Letters</em>, 52, e2024GL112711.
+            <a href="https://doi.org/10.1029/2024GL112711" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Divergent urbanization-induced impacts on global surface urban heat island trends since 1980s. <em>Remote Sensing of Environment</em>, 295, 113650.
+            <a href="https://doi.org/10.1016/j.rse.2023.113650" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Competition between biogeochemical drivers and land-cover changes determines urban greening or browning. <em>Remote Sensing of Environment</em>, 287, 113481.
+            <a href="https://doi.org/10.1016/j.rse.2023.113481" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Zhan, W.*, et al. (2022). Long‐Term and Fine‐Scale Surface Urban Heat Island Dynamics Revealed by Landsat Data Since the 1980s: A Comparison of Four Megacities in China. <em>Journal of Geophysical Research: Atmospheres</em>, 127, e2021JD035598.
+            <a href="https://doi.org/10.1029/2021JD035598" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Using Prophet Forecasting Model to Characterize the Temporal Variations of Historical and Future Surface Urban Heat Island in China. <em>Journal of Geophysical Research: Atmospheres</em>, 125, e2019JD031968.
+            <a href="https://doi.org/10.1029/2019JD031968" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Spatially non-stationary effect of underlying driving factors on surface urban heat islands in global major cities. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 90, 102131.
+            <a href="https://doi.org/10.1016/j.jag.2020.102131" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.* (2020). Population exposure to extreme heat in China: Frequency, intensity, duration and temporal trends. <em>Sustainable Cities and Society</em>, 60, 102282.
+            <a href="https://doi.org/10.1016/j.scs.2020.102282" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Effect of terrestrial vegetation growth on climate change in China. <em>Journal of Environmental Management</em>, 262, 110321.
+            <a href="https://doi.org/10.1016/j.jenvman.2020.110321" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Relationship of surface urban heat island with air temperature and precipitation in global large cities. <em>Ecological Indicators</em>, 117, 106683.
+            <a href="https://doi.org/10.1016/j.ecolind.2020.106683" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Spatial and dynamic perspectives on surface urban heat island and their relationships with vegetation activity in Beijing, China, based on Moderate Resolution Imaging Spectroradiometer data. <em>International Journal of Remote Sensing</em>, 41, 1-15.
+            <a href="https://doi.org/10.1080/01431161.2020.1717319" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.* (2019). Satellite-based spatiotemporal trends of canopy urban heat islands and associated drivers in China’s 32 major cities. <em>Remote Sensing</em>, 11(1), 102.
+            <a href="https://doi.org/10.3390/rs11010102" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.* (2019). Satellite-based regional warming hiatus in China and its implication. <em>Science of the Total Environment</em>, 648, 1394-1402.
+            <a href="https://doi.org/10.1016/j.scitotenv.2018.08.283" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.* (2019). Estimating monthly average temperature by remote sensing in China. <em>Advances in Space Research</em>, 63, 2345-2357.
+            <a href="https://doi.org/10.1016/j.asr.2018.12.022" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item">Chen, J., <strong>Li, L.*</strong> (2019). Regional economic activity derived from MODIS data: A comparison with DMSP/OLS and NPP/VIIRS nighttime light data. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 12, 3067-3077.
+            <a href="https://doi.org/10.1109/JSTARS.2019.2922765" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Zha, Y.* (2018). Mapping relative humidity, average and extreme temperature in hot summer over China. <em>Science of the Total Environment</em>, 615, 875-881.
+            <a href="https://doi.org/10.1016/j.scitotenv.2017.09.284" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+        <li class="pub-item"><strong>Li, L.</strong>, Huang, X.*, et al. (2017). Quantifying the spatiotemporal trends of canopy layer heat island (CLHI) and its driving factors over Wuhan, China with satellite remote sensing. <em>Remote Sensing</em>, 9, 536.
+            <a href="https://doi.org/10.3390/rs9060536" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+        <li class="pub-item"><strong>Li, L.</strong>, Liu, R.*, et al. (2017). A novel genetic algorithm for optimization of conditioning factors in shallow translational landslides and susceptibility mapping. <em>Arabian Journal of Geosciences</em>, 10, 209.
+            <a href="https://doi.org/10.1007/s12517-017-2981-2" target="_blank" style="text-decoration:none;">[DOI]</a>
+        </li>
+
+    </ol>
+</div>
+
+
+ <!-- ================= ALL PUBLICATIONS (按年份分块) ================= -->
+
+<div id="pub-all" style="display:none;">
+
+    <div class="year-block">
+        <div class="year-header">2025</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text">Zhan, W., <strong>Li, L.*</strong>, et al. (2025). Recent widespread deceleration of global surface urban heat islands unveiled by satellites. <em>Geophysical Research Letters</em>, 52, e2024GL112711.</span>
+                <a href="https://doi.org/10.1029/2024GL112711" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2023</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Divergent urbanization-induced impacts on global surface urban heat island trends since 1980s. <em>Remote Sensing of Environment</em>, 295, 113650.</span>
+                <a href="https://doi.org/10.1016/j.rse.2023.113650" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zhan, W.*, et al. (2023). Competition between biogeochemical drivers and land-cover changes determines urban greening or browning. <em>Remote Sensing of Environment</em>, 287, 113481.</span>
+                <a href="https://doi.org/10.1016/j.rse.2023.113481" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2022</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zhan, W.*, et al. (2022). Long‐Term and Fine‐Scale Surface Urban Heat Island Dynamics Revealed by Landsat Data Since the 1980s: A Comparison of Four Megacities in China. <em>Journal of Geophysical Research: Atmospheres</em>, 127, e2021JD035598.</span>
+                <a href="https://doi.org/10.1029/2021JD035598" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2020</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Using Prophet Forecasting Model to Characterize the Temporal Variations of Historical and Future Surface Urban Heat Island in China. <em>Journal of Geophysical Research: Atmospheres</em>, 125, e2019JD031968.</span>
+                <a href="https://doi.org/10.1029/2019JD031968" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Spatially non-stationary effect of underlying driving factors on surface urban heat islands in global major cities. <em>International Journal of Applied Earth Observation and Geoinformation</em>, 90, 102131.</span>
+                <a href="https://doi.org/10.1016/j.jag.2020.102131" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.* (2020). Population exposure to extreme heat in China: Frequency, intensity, duration and temporal trends. <em>Sustainable Cities and Society</em>, 60, 102282.</span>
+                <a href="https://doi.org/10.1016/j.scs.2020.102282" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Effect of terrestrial vegetation growth on climate change in China. <em>Journal of Environmental Management</em>, 262, 110321.</span>
+                <a href="https://doi.org/10.1016/j.jenvman.2020.110321" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Relationship of surface urban heat island with air temperature and precipitation in global large cities. <em>Ecological Indicators</em>, 117, 106683.</span>
+                <a href="https://doi.org/10.1016/j.ecolind.2020.106683" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.*, et al. (2020). Spatial and dynamic perspectives on surface urban heat island and their relationships with vegetation activity in Beijing, China, based on Moderate Resolution Imaging Spectroradiometer data. <em>International Journal of Remote Sensing</em>, 41, 1-15.</span>
+                <a href="https://doi.org/10.1080/01431161.2020.1717319" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2019</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.* (2019). Satellite-based spatiotemporal trends of canopy urban heat islands and associated drivers in China’s 32 major cities. <em>Remote Sensing</em>, 11(1), 102.</span>
+                <a href="https://doi.org/10.3390/rs11010102" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.* (2019). Satellite-based regional warming hiatus in China and its implication. <em>Science of the Total Environment</em>, 648, 1394-1402.</span>
+                <a href="https://doi.org/10.1016/j.scitotenv.2018.08.283" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.* (2019). Estimating monthly average temperature by remote sensing in China. <em>Advances in Space Research</em>, 63, 2345-2357.</span>
+                <a href="https://doi.org/10.1016/j.asr.2018.12.022" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text">Chen, J., <strong>Li, L.*</strong> (2019). Regional economic activity derived from MODIS data: A comparison with DMSP/OLS and NPP/VIIRS nighttime light data. <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em>, 12, 3067-3077.</span>
+                <a href="https://doi.org/10.1109/JSTARS.2019.2922765" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2018</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Zha, Y.* (2018). Mapping relative humidity, average and extreme temperature in hot summer over China. <em>Science of the Total Environment</em>, 615, 875-881.</span>
+                <a href="https://doi.org/10.1016/j.scitotenv.2017.09.284" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="year-block">
+        <div class="year-header">2017</div>
+        <div class="year-content">
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Huang, X.*, et al. (2017). Quantifying the spatiotemporal trends of canopy layer heat island (CLHI) and its driving factors over Wuhan, China with satellite remote sensing. <em>Remote Sensing</em>, 9, 536.</span>
+                <a href="https://doi.org/10.3390/rs9060536" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+            <div class="pub-item">
+                <span class="pub-text"><strong>Li, L.</strong>, Liu, R.*, et al. (2017). A novel genetic algorithm for optimization of conditioning factors in shallow translational landslides and susceptibility mapping. <em>Arabian Journal of Geosciences</em>, 10, 209.</span>
+                <a href="https://doi.org/10.1007/s12517-017-2981-2" target="_blank" style="text-decoration:none;">[DOI]</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+  <script>
+    /* ====== Tab switching ====== */
+    function clearTabs() {
+      document.getElementById("pub-selected").style.display = "none";
+      document.getElementById("pub-leading").style.display = "none";
+      document.getElementById("pub-all").style.display = "none";
+      document.querySelectorAll(".pub-tab-btn").forEach(btn => btn.classList.remove("active"));
+    }
+
+    function showSelected() {
+      clearTabs();
+      document.getElementById("pub-selected").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[0].classList.add("active");
+    }
+
+    function showLeading() {
+      clearTabs();
+      document.getElementById("pub-leading").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[1].classList.add("active");
+    }
+
+    function showAll() {
+      clearTabs();
+      document.getElementById("pub-all").style.display = "block";
+      document.querySelectorAll(".pub-tab-btn")[2].classList.add("active");
+    }
+  </script>
+</section>
+
+
+<section>
+  <h2 class="section-title">Work and Education Experience</h2>
+<ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+    <li>2020.09 – 2024.08:Ph.D. in Geography, School of Geographic and Oceanographic Sciences, Nanjing University</li>
+<li>2017.09 – 2020.06:M.S. in Cartography and Geographic Information System, School of Geography Science, Nanjing Normal University</li>
+<li>2013.09 – 2017.06: B.Eng. in Spatial Information and Digital Technology, College of Geophysics, Chengdu University of Technology</li>
+  </ul>
+</section>
+
+<section>
+    <h2 class="section-title">Honors & Research Projects</h2>
+
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Honors and Awards
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>National Scholarship for Graduate Students (3 times)</li>
+    </ul>
+
+    <h3 style="color:#004d40; font-size:1.1rem; margin-top:12px; margin-bottom:6px;">
+        Funded Research Projects (PI / Participant)
+    </h3>
+    <ul class="info-list" style="list-style-type: disc; padding-left: 20px;">
+        <li>
+            [PI, On-going] National Natural Science Foundation of China (NSFC) Youth Program (Category C), Research on the Multi-stage Cooling Effect of Urban Park Construction based on Remote Sensing Observation and Data Reconstruction (2026.01–2028.12).
+        </li>
+        <li>
+            [PI, Completed] Jiangsu Provincial Graduate Research and Practice Innovation Program, Scientific Research Project, Impact and Mechanism of Chinese Vegetation Growth on Climate Warming in the Early 21st Century (2018.6–2019.5).
+        </li>
+        <li>
+            [PI, Completed] Jiangsu Provincial Graduate Research and Practice Innovation Program, Scientific Research Project, Research on Annual Dynamics and Long-term Trend of Global Fine-scale Urban Heat Island supported by Landsat Data (2022.6–2023.5).
+        </li>
+    </ul>
+
+</section>
+
+
+  </main>
+
+  <footer>
+    <img src="../images/logo.jpg" alt="Group Logo" class="footer-logo">
+    <br>
+    © 2025 VAMOS Group | Nanjing Normal University
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jing Liu | Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --card-bg: #ffffff;
+      --text-color: #1f2937;
+      --muted-color: #6b7280;
+      --primary-color: #2563eb;
+      --border-color: #e5e7eb;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px auto;
+      border: 3px solid var(--primary-color);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 4px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--text-color);
+      margin: 6px 0;
+    }
+
+    strong {
+      color: var(--primary-color);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a.back:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    /* Publication collapsible */
+    .year-card {
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .year-header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 12px 16px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .year-header:hover {
+      background: #1e40af;
+    }
+
+    .year-content {
+      display: none;
+      padding: 12px 16px;
+      background: var(--card-bg);
+    }
+
+    .year-content li {
+      margin-bottom: 6px;
+    }
+
+    .year-toggle::after {
+      content: "▼";
+      transition: transform 0.2s;
+    }
+
+    .year-toggle.active::after {
+      transform: rotate(-180deg);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 20px; margin: 20px 12px; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.2rem; }
+      img { width: 140px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up">
+    <img src="../images/team/liu_jing.png" alt="Jing Liu">
+    <h1>Jing Liu, Associate Professor</h1>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>Hometown:</strong> Baoji, Shaanxi, China</p>
+    <p><strong>Position:</strong> Associate Professor, Master's Supervisor, Jiangsu Dual-Innovation Doctor</p>
+
+    <section>
+      <h2>Professional Profile</h2>
+      <p>Jing Liu serves on several professional committees, including the International Society for Digital Earth (ISDE) LiDAR Committee and Digital Ecology Committee, the Low-Altitude Development and Utilization Working Committee of the Chinese Society for Surveying and Mapping, the Resource Mapping Committee of the Chinese Society of Natural Resources, and the Women in Remote Sensing Committee of the Chinese Association of Remote Sensing Applications. She is a youth editorial board member of <em>Plant Phenomics</em> and serves as reviewer for journals including <em>Remote Sensing of Environment</em>, <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, <em>IEEE Transactions on Geoscience and Remote Sensing</em>, and <em>Agricultural and Forest Meteorology</em>.</p>
+    </section>
+
+    <section>
+      <h2>Research Directions</h2>
+      <ul>
+        <li><strong>LiDAR Remote Sensing:</strong> Algorithm development and applications for multi-scale LiDAR (terrestrial, airborne, spaceborne) including forest surveys, terrain mapping, and urban land cover classification.</li>
+        <li><strong>Vegetation Remote Sensing:</strong> Quantitative retrieval of forest structural parameters from multi-source remote sensing, virtual forest environment modeling, and applications in forest resource management and terrestrial ecosystem carbon cycling.</li>
+        <li><strong>Point Cloud Intelligent Processing:</strong> Algorithms for point cloud feature extraction, segmentation, classification, and 3D modeling.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+      <ul>
+        <li>2020.07 – Present: Associate Professor, School of Geography, Nanjing Normal University</li>
+        <li>2019.09 – 2020.07: Lecturer, School of Geography, Nanjing Normal University</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>2014.09 – 2019.05: PhD, Natural Resources, ITC, University of Twente, Netherlands</li>
+        <li>2015.09 – 2019.05: PhD, Geospatial Science, RMIT University, Australia</li>
+        <li>2011.09 – 2014.06: MSc, Photogrammetry & Remote Sensing, Peking University</li>
+        <li>2007.09 – 2011.06: BSc, Geographic Information System, Nanjing University</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Honors & Awards</h2>
+      <ul>
+        <li>2025: China LiDAR Young Scientist Award</li>
+        <li>2025: 9th National LiDAR Data Processing Competition, First Prize (Advisor)</li>
+        <li>2025: National University Surveying & Mapping Innovation & Skills Competition, 2nd Prize (Airborne LiDAR Simulation, Advisor)</li>
+        <li>2024: Jiangsu Youth Remote Sensing & GIS Science Award</li>
+        <li>2024: National University Surveying Innovation & Entrepreneurship Competition, 2nd Prize (Advisor)</li>
+        <li>2024: Remote Sensing Journal Travel Award</li>
+        <li>2023: 7th National LiDAR Data Processing Competition, First Prize (Advisor)</li>
+        <li>2023: National University Surveying Teaching Innovation Competition, Special Prize</li>
+        <li>2023: Nanjing Normal University Graduate Cultural & Scientific Activity, Excellent Advisor</li>
+        <li>2020: 9th National College GIS Application Skills Competition, Special Prize (Advisor)</li>
+        <li>2018: Remote Sensing Travel Award</li>
+        <li>2012: 7th China Youth Remote Sensing Debate, Excellent Debater</li>
+        <li>2011: Nanjing University Outstanding Graduate</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Main Research Projects</h2>
+      <ul>
+        <li>NSFC General Project 42471418: Combined spaceborne full-waveform and photon-counting LiDAR for forest LAI vertical distribution retrieval (2025–2028), PI</li>
+        <li>Jiangsu Basic Research Project BK20241884: Monitoring terrestrial ecosystem GPP combining LiDAR and hyperspectral data (2024–2027), PI</li>
+        <li>Key Lab of Remote Sensing Open Fund OFSLRSS202431: Forest LAI vertical distribution retrieval considering canopy aggregation effect (2025–2026), PI</li>
+        <li>NSFC Youth Fund 42001284: LAI vertical distribution considering forest canopy structure heterogeneity (2021–2023), PI</li>
+        <li>Jiangsu Youth Fund: 3D vegetation distribution in Yangtze Delta (2020–2023), PI</li>
+        <li>NNU Talent Project: Ground-based LAI measurement methods using terrestrial LiDAR (2019–2022), PI</li>
+        <li>Jiangsu Dual-Innovation Doctor Program, Completed, PI</li>
+        <li>NSFC-Xinjiang Joint Fund Key Project: Ecosystem water-socioeconomic-water resource coupling in Tarim River Basin (2021–2024), participant</li>
+        <li>Jiangsu University Excellent Innovation Team: Human-Earth System Modeling & Sustainability Assessment (2021–2024), participant</li>
+        <li>NSFC General Project 41371329: Change detection based on spatiotemporal probability and decision fusion (2014–2017), participant</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Publications</h2>
+
+      <div class="year-card">
+        <div class="year-header year-toggle">2025</div>
+        <ul class="year-content">
+          <li>Han, D., Liu, J.*, et al. Estimation of canopy fAPAR using optical reflectance and airborne LiDAR data. <em>Remote Sensing of Environment</em>, 332, 115065. <a href="https://doi.org/10.1016/j.rse.2025.115065" target="_blank">DOI</a></li>
+          <li>Yang, P., Liu, Z., Han, D., Liu, J.*, et al. Mitigating the black-soil problem in R2F relationship. <em>Remote Sensing of Environment</em>, 330, 114998. <a href="https://doi.org/10.1016/j.rse.2025.114998" target="_blank">DOI</a></li>
+          <li>Zhang, R., Liu, J.*, et al. Ratio of far-red to red leaf SIF and chlorophyll content. <em>Remote Sensing of Environment</em>, 324, 114762. <a href="https://doi.org/10.1016/j.rse.2025.114762" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+
+      <div class="year-card">
+        <div class="year-header year-toggle">2024</div>
+        <ul class="year-content">
+          <li>Liu, J.*, Wang, J. & Li, L.* Vectorized solar PV dataset across China. <em>Scientific Data</em>, 11, 1446. <a href="https://doi.org/10.1038/s41597-024-04356-z" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+
+      <div class="year-card">
+        <div class="year-header year-toggle">2023</div>
+        <ul class="year-content">
+          <li>7th National LiDAR Data Processing Competition, First Prize (Advisor)</li>
+        </ul>
+      </div>
+
+      <div class="year-card">
+        <div class="year-header year-toggle">2022</div>
+        <ul class="year-content">
+          <li>Airborne LiDAR open DEM evaluation. <em>J. Wuhan Univ. Info. Sci.</em>. <a href="https://doi.org/10.13203/j.whugis20220421" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+
+      <div class="year-card">
+        <div class="year-header year-toggle">2021</div>
+        <ul class="year-content">
+          <li>Comparative evaluation of LAI estimation from digital hemispherical photography. <em>Remote Sensing</em>, 13(16), 3325. <a href="https://doi.org/10.3390/rs13163325" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Patents & Software</h2>
+      <ul>
+        <li>Ground-based LiDAR forest LAI retrieval method, ZL 2024 1 1672312.7, granted</li>
+        <li>Spaceborne LiDAR vertical structure-based plantation extraction, ZL 2024 1 1672302.3, granted</li>
+        <li>Airborne point cloud-based large-scale building PV potential calculation, CN118570023A, published</li>
+        <li>Building height extraction using spaceborne LiDAR & high-res imagery, CN120314971A, published</li>
+        <li>Point cloud semantic segmentation using local & long-distance context, CN118135212A, published</li>
+        <li>Vegetation dynamic reflectance considering environment & physiology, CN118866149A, published</li>
+        <li>Fine PV plant extraction using GEE & SAM model, CN120580604A, published</li>
+      </ul>
+    </section>
+
+    <a href="../team.html" class="back">← Back to Team</a>
+  </div>
+
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
+    });
+
+    // Collapsible publications
+    document.querySelectorAll('.year-toggle').forEach(toggle => {
+      toggle.addEventListener('click', () => {
+        const content = toggle.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        toggle.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

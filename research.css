@@ -1,0 +1,154 @@
+/* ===== Research Hero Banner ===== */
+.research-hero {
+  position: relative;
+  width: 95%;
+  margin-bottom: 20px;
+}
+
+.research-hero img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.70;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(0, 77, 64, 0.7);
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+/* ===== Research Main Blocks ===== */
+
+.research-main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px 20px;
+}
+
+.research-block {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.research-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.research-img img {
+  width: 380px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #e6e6e6;
+}
+
+.research-text h2 {
+  color: #004d40;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.research-text ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.rep-box {
+  margin-top: 12px;
+  background: #f1f5f3;
+  padding: 10px 12px;
+  border-left: 4px solid #004d40;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .research-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .research-img img {
+    width: 100%;
+  }
+}
+/* ===== Carousel container ===== */
+.carousel {
+  position: relative;
+  width: 380px;         /* 你要多大就设多大 */
+  height: 330px;        /* 图片会自动适配 */
+  overflow: hidden;
+  border-radius: 10px;
+  border: 2px solid #e6e6e6;
+  background: #f8f8f8;
+}
+
+.carousel .slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel .slide {
+  width: 100%;          /* 自适应宽度 */
+  height: 100%;         /* 自适应高度 */
+  object-fit: cover;    /* 核心，不变形、自适应裁剪 */
+  flex-shrink: 0;
+  display: none;
+}
+
+.carousel .slide[data-active] {
+  display: block;
+}
+
+/* Buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.35);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.carousel-button.prev { left: 10px; }
+.carousel-button.next { right: 10px; }
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.carousel-dots .dot {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+.carousel-dots .dot.active {
+  background: #004d40;
+}

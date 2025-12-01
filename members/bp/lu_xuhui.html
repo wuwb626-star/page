@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Xuhui Lu | Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --card-bg: #ffffff;
+      --text-color: #1f2937;
+      --muted-color: #6b7280;
+      --primary-color: #2563eb;
+      --border-color: #e5e7eb;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px auto;
+      border: 3px solid var(--primary-color);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 4px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--text-color);
+      margin: 6px 0;
+    }
+
+    strong {
+      color: var(--primary-color);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a.back:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 20px; margin: 20px 12px; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.2rem; }
+      img { width: 140px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up">
+    <img src="../images/team/lu_xuhui.jpg" alt="Xuhui Lu">
+    <h1>Xuhui Lu</h1>
+    <p><strong>Ph.D. Candidate (ITC, University of Twente, Netherlands)</strong></p>
+    <p><strong>Enrollment Year:</strong> 2020</p>
+    <p><strong>Gender:</strong> Male</p>
+    <p><strong>Hometown:</strong> Yantai, Shandong, China</p>
+    <p><strong>Email:</strong> x.lu@utwente.nl</p>
+
+    <section>
+      <h2>Education Background</h2>
+      <ul>
+        <li>2020.11 – Present: Ph.D. Candidate, Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Netherlands</li>
+        <li>2016.9 – 2019.7: M.Sc., University of Chinese Academy of Sciences, Institute of Remote Sensing and Digital Earth (Major: Cartography and Geographic Information System)</li>
+        <li>2011.9 – 2015.7: B.Sc., School of Information Engineering, China University of Geosciences (Wuhan) (Major: Remote Sensing Science and Technology)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Solar-induced chlorophyll fluorescence (SIF)</li>
+        <li>Vegetation physiological monitoring</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> x.lu@utwente.nl</p>
+    </section>
+
+    <a href="../team.html" class="back">← Back to Team</a>
+  </div>
+
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
+    });
+  </script>
+</body>
+</html>

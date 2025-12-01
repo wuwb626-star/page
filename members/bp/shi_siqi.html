@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Siqi Shi | Research Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --card-bg: #ffffff;
+      --text-color: #1f2937;
+      --muted-color: #6b7280;
+      --primary-color: #2563eb;
+      --border-color: #e5e7eb;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px auto;
+      border: 3px solid var(--primary-color);
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary-color);
+      margin-top: 30px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 4px;
+    }
+
+    p, li {
+      line-height: 1.6;
+      color: var(--text-color);
+      margin: 6px 0;
+    }
+
+    strong {
+      color: var(--primary-color);
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    section {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a.back:hover {
+      color: #1e40af;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 20px; margin: 20px 12px; }
+      h1 { font-size: 1.6rem; }
+      h2 { font-size: 1.2rem; }
+      img { width: 140px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" data-aos="fade-up">
+    <img src="../images/team/shi_siqi.jpg" alt="Siqi Shi">
+    <h1>Siqi Shi</h1>
+    <p><strong>2021 Cohort Ph.D. Candidate (Netherlands)</strong></p>
+    <p><strong>Joined:</strong> 2021</p>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>Hometown:</strong> Jingdezhen, Jiangxi, China</p>
+
+    <section>
+      <h2>Education Background</h2>
+      <ul>
+        <li>2021.3 – Present: Faculty of Geo-Information Science and Earth Observation (ITC), University of Twente, Netherlands — Ph.D. Candidate</li>
+        <li>2017.9 – 2020.7: University of Chinese Academy of Sciences, School of Earth Sciences — M.Sc. in Geosciences</li>
+        <li>2013.9 – 2017.7: Jiangxi Normal University, School of Geography and Environment — B.Sc. in Science</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Vegetation Remote Sensing</li>
+        <li>Vegetation Phenology Monitoring</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> s.shi@utwente.nl</p>
+      <p><strong>Alternate Email:</strong> shisq.ucas@gmail.com</p>
+    </section>
+
+    <section>
+      <h2>Selected Publication</h2>
+      <ul>
+        <li>Shi, S., Yang, P., & van der Tol, C., 2023. Spatial-temporal dynamics of land surface phenology over Africa for the period of 1982–2015. <em>Heliyon</em>, 9(6). <a href="https://doi.org/10.1016/j.heliyon.2023.e16413" target="_blank">DOI</a></li>
+      </ul>
+    </section>
+
+    <a href="../student.html" class="back">← Back to Students</a>
+  </div>
+
+  <script>
+    AOS.init({
+      offset: 100,
+      duration: 600,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
+    });
+  </script>
+</body>
+</html>
